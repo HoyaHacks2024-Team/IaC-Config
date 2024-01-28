@@ -4,7 +4,7 @@ metadata:
   name: prospectus-backend-scrape-svc
 spec:
   selector:
-    app.kubernetes.io/name: prospectus-backend-scrape-svc
+    app.kubernetes.io/name: prospectus-backend-scrape
   ports:
     - protocol: TCP
       port: 6000
