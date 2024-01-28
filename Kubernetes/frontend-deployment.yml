@@ -16,4 +16,4 @@ spec:
       - name: prospectus-frontend
         image: warpwing/hoyasfrontend:latest
         ports:
-        - containerPort: 443
+        - containerPort: 80
