@@ -1,18 +1,18 @@
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: flask-app-hpa
+  name: backend-scrape-hpa
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: flask-app
+    name: prospectus-backend-scrape
   minReplicas: 4
-  maxReplicas: 10
+  maxReplicas: 8
   metrics:
   - type: Resource
     resource:
       name: cpu
       target:
         type: Utilization
-        averageUtilization: 50
+        averageUtilization: 75

@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: prospectus-frontend
+  name: prospectus-backend-retrieve
 spec:
   replicas: 4
   selector:
     matchLabels:
-      app: prospectus-frontend
+      app: prospectus-backend-retrieve
   template:
     metadata:
       labels:
-        app: prospectus-frontend
+        app: prospectus-backend-retrieve
     spec:
       containers:
-      - name: prospectus-frontend
+      - name: prospectus-backend-retrieve
         image: warpwing/hoyastest:latest
         ports:
-        - containerPort: 80
+        - containerPort: 5000
