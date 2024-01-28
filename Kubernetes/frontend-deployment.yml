@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: prospectus-frontend
-        image: warpwing/hoyastest:latest
+        image: warpwing/hoyasfrontend:latest
         ports:
         - containerPort: 80
